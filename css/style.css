@@ -209,10 +209,11 @@ header {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin: 0 1px;
+    margin: 0 4px;
     color: #fff;
     text-decoration: none;
     font-family: 'cera_round_pro_demomedium';
+    gap: 4px;
 }
 
 header .container {
@@ -238,21 +239,19 @@ header ul {
 }
 
 .menu a:hover {
+    font-family: 'cera_round_pro_demobold';
     font-weight: 700;
     font-size: 16px;
     color: #3d3d3d;
 }
 
-.banner {
-    max-width: 1200px;
-    margin: auto;
+.banner .container {
     display: flex;
     justify-content: space-between;
-
 }
 
 .description {
-    max-width: 560px;
+    max-width: 557px;
     margin-right: 93px;
 }
 
@@ -291,7 +290,7 @@ header ul {
     margin-bottom: 49px;
 }
 
-.description button {
+.description a {
     border-radius: 6px;
     padding: 10px 26px;
     background: #46a358;
@@ -300,6 +299,7 @@ header ul {
     font-size: 16px;
     line-height: 125%;
     text-transform: uppercase;
+    text-decoration: none;
     color: #fff;
     font-family: 'cera_round_pro_demobold';;
 }
@@ -307,34 +307,38 @@ header ul {
 .images_flower {
     display: flex;
     align-items: flex-end;
-    width: 507px;
-    height: 450px;
+    max-width: 507px;
 }
 
 .product .container {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
+    padding-top: 26px;
+    gap: 50px;
 }
 
 .categories_sale {
-    max-width: 470px;
+    max-width: 310px;
+    background: #fbfbfb;
 }
 
-.categories {
+.categories_sale ul{
     padding-bottom: 377px;
+    padding-left: 30px;
 }
 
-.categories h2 {
+.categories_sale h2 {
     font-family: 'cera_round_pro_demobold';
     font-weight: 700;
     font-size: 18px;
     line-height: 89%;
     color: #3d3d3d;
     padding-bottom: 7px;
+    padding-left: 18px;
 }
 
-.categories a {
+.categories_sale a {
     font-family: 'cera_round_pro_demoregular';
     font-size: 15px;
     line-height: 267%;
@@ -343,7 +347,113 @@ header ul {
     text-decoration: none;
 }
 
-.categories a:hover {
+.categories_sale a:hover {
+    font-family: 'cera_round_pro_demobold';
     color: #46a358;
     font-weight: 700;
 }
+.cards_product{
+    max-width: 840px;
+}
+.container .product_line{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 31px;
+    height: 23px;
+}
+.product_line ul {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.product_line a,p{
+    font-family: 'cera_round_pro_demoregular';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 107%;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+.product_line a:hover{
+    font-family: 'cera_round_pro_demobold';
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 107%;
+    color: #46a358;
+}
+.product_line p{
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.varieties_product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 70px 33px;
+    padding-bottom: 90px;
+}
+.varieties_product article{
+    max-width: 258px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.varieties_product article .article{
+    display: block;
+    justify-content: flex-end;
+}
+.varieties_product article h3{
+    font-family: 'cera_round_pro_demoregular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: #3d3d3d;
+    padding-bottom: 6px;
+}
+.varieties_product article p{
+    font-family: 'cera_round_pro_demobold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #46a358;
+}
+.page_number{
+    width: 215px;
+    height: 35px;
+}
+.page_number ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.page_number li{
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.page_number a{
+    font-family: 'cera_round_pro_demolight';
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+.page_number li:hover{
+    background: #46a358;
+}
+.page_number a:hover{
+    font-family: 'cera_round_pro_demobold';
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #fff;
+}
+
