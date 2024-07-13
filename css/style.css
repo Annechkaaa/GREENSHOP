@@ -420,13 +420,10 @@ header ul {
     line-height: 89%;
     color: #46a358;
 }
-.page_number{
-    width: 215px;
-    height: 35px;
-}
+
 .page_number ul{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     gap: 10px;
 }
 .page_number li{
@@ -456,4 +453,3 @@ header ul {
     line-height: 89%;
     color: #fff;
 }
-
