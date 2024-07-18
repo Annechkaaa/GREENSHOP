@@ -404,7 +404,13 @@ header ul li ul li{
 .varieties_product article{
     max-width: 258px;
     height: 350px;
+    border-top: solid 1px transparent;
+
 }
+.varieties_product article:hover{
+    border-top: solid 1px #46a358;
+}
+
 .varieties_product img{
     width: 250px;
     height: 250px;
@@ -539,6 +545,7 @@ header ul li ul li{
 .blog_post article{
     max-width: 268px;
     min-height: 362px;
+    text-align: left;
 }
 .blog_post article img{
     width: 268px;
@@ -582,9 +589,9 @@ header ul li ul li{
     display: inline-flex;
     text-align: left;
     align-items: center;
-    padding-bottom: 112px;
 }
 .blog_post a img{
     width: 16px;
     height: 16px;
+    padding-bottom: 0;
 }
