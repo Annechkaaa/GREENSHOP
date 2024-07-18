@@ -229,7 +229,14 @@ header ul {
     align-items: center;
     gap: 50px;
 }
+header ul li ul{
+    display: block;
+}
+header ul li ul li{
+    text-align: left;
+    min-width: 188px;
 
+}
 .menu a {
     font-family: 'cera_round_pro_demoregular';
     text-decoration: none;
@@ -397,14 +404,14 @@ header ul {
 .varieties_product article{
     max-width: 258px;
     height: 350px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
-.varieties_product article .article{
-    display: block;
-    justify-content: flex-end;
+.varieties_product img{
+    width: 250px;
+    height: 250px;
+    margin-bottom: 12px;
+    background: #fbfbfb;
 }
+
 .varieties_product article h3{
     font-family: 'cera_round_pro_demoregular';
     font-weight: 400;
@@ -425,6 +432,7 @@ header ul {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+    padding-bottom: 94px;
 }
 .page_number li{
     border: 1px solid #e5e5e5;
@@ -452,4 +460,131 @@ header ul {
     font-size: 18px;
     line-height: 89%;
     color: #fff;
+}
+.summer_collection .container{
+    display: block;
+    justify-content: space-between;
+}
+.plants_story{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 138px;
+}
+.plants_story article{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 586px;
+    text-align: right;
+}
+.text_story h3{
+    font-family: 'cera_round_pro_demoblack';
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: right;
+    color: #3d3d3d;
+    padding-bottom: 9px;
+}
+.text_story p{
+    font-family: 'cera_round_pro_demoregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: right;
+    color: #727272;
+    padding-bottom: 25px;
+}
+.text_story a{
+    border-radius: 6px;
+    background: #46a358;
+    padding: 11px 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    font-family: 'cera_round_pro_demomedium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 143%;
+    text-decoration: none;
+    color: #fff;
+}
+.blog{
+    text-align: center;
+}
+.blog h2{
+    font-family: 'cera_round_pro_demobold';
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 53%;
+    text-align: center;
+    color: #3d3d3d;
+    padding-bottom: 15px;
+}
+.blog p{
+    font-family: 'cera_round_pro_demoregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 171%;
+    text-align: center;
+    color: #727272;
+    padding-bottom: 35px;
+}
+.blog_post{
+    display: flex;
+    gap: 43px;
+}
+.blog_post article{
+    max-width: 268px;
+    min-height: 362px;
+}
+.blog_post article img{
+    width: 268px;
+    height: 195px;
+    padding-bottom: 9px;
+}
+.blog_post .post_date{
+    font-family: 'cera_round_pro_demomedium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #46a358;
+    padding-bottom: 4px;
+    text-align: left;
+}
+.blog_post article h3{
+    font-family: 'cera_round_pro_demobold';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 130%;
+    color: #3d3d3d;
+    padding-bottom: 4px;
+    text-align: left;
+}
+.blog_post .text_about{
+    font-family: 'cera_round_pro_demoregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+    text-align: left;
+}
+.blog_post a{
+    font-family: 'cera_round_pro_demomedium';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 114%;
+    color: #3d3d3d;
+    text-decoration: none;
+    gap: 3px;
+    display: inline-flex;
+    text-align: left;
+    align-items: center;
+    padding-bottom: 112px;
+}
+.blog_post a img{
+    width: 16px;
+    height: 16px;
 }
