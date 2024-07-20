@@ -249,7 +249,7 @@ header .dropdown a {
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: space-between;
     padding-left: 14px;
@@ -257,8 +257,8 @@ header .dropdown a {
 
 header li {
     position: relative;
-    min-width: 90px;
-    text-align: center;
+/*    min-width: 90px;
+    text-align: center;*/
 }
 
 header li.dropdown:hover ul {
