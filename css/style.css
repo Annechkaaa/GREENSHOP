@@ -142,7 +142,7 @@
     margin-bottom: 14px;
 }
 
-input {
+.input_form{
     margin: 16px 100px;
     border: 1px solid #eaeaea;
     border-radius: 5px;
@@ -314,6 +314,7 @@ header li.dropdown:hover ul {
 .description {
     max-width: 557px;
     margin-right: 93px;
+    padding-left: 40px;
 }
 
 .description h2 {
@@ -758,13 +759,25 @@ header li.dropdown:hover ul {
     width: 204px;
     height: 202px;
 }
-/*.last_article:after{
-    width: 187px;
-    height: 1px;
-    border: solid 1px red;
-    transform: rotate(90deg);
+/*.last_article_bord{
+    border-right: solid 1px rgba(70, 163, 88, 0.1);
+    border-left: solid 1px rgba(70, 163, 88, 0.1);
+    padding: 0 27px;
 }
 */
+/*
+.last_part .last_article_bord:after {
+    width: 187px;
+    height: 1px;
+    border: solid 1px #46A358;
+    transform: rotate(90deg);
+    content: "";
+    display: inline-block;
+    position: absolute;
+}
+ */
+
+
 .last_article h3{
     font-family: 'cera_round_pro_demobold';
     font-weight: 700;
@@ -800,34 +813,27 @@ header li.dropdown:hover ul {
     justify-content: left;
     width: 354px;
     height: 40px;
-    position: relative;
-    z-index: 1;
- /*   background: #fff;;
-    border-radius: 6px;
-    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
-    overflow: hidden;
-    padding-top: 18px;
-    position: relative;
-    z-index: 1;
-    */
 }
-.form_email input{
+.form_email .email_input{
     background: #fff ;
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
-    left: 0;
-    position: absolute;
-    z-index: 2;
+    width: 269px;
+    padding-left: 11px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-family: 'cera_round_pro_demoregular';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+    color: #acacac;
 }
 .form_email button{
     border: none;
-    right: calc(100% - 269px);
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px;
     padding: 12px 25px;
     background: #46a358;
-    position: absolute;
-    z-index: 2;
 }
 .subscription p{
     font-family: 'cera_round_pro_demoregular';
@@ -854,6 +860,7 @@ header li.dropdown:hover ul {
     height: 34px;
 }
 .background p{
+    display: inline-flex;
     font-family: 'cera_round_pro_demoregular';
     font-weight: 400;
     font-size: 14px;
@@ -866,7 +873,9 @@ header li.dropdown:hover ul {
     width: 20px;
     height: 20px;
     content: "";
-    gap: 10px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 9px;
 }
 .background .email:before{
     background-image: url("../images/email.svg");
@@ -874,7 +883,7 @@ header li.dropdown:hover ul {
     width: 20px;
     height: 20px;
     content: "";
-    gap: 10px;
+    margin-right: 10px;
 }
 .background .tel_number:before{
     background-image: url("../images/tel.svg");
@@ -882,7 +891,7 @@ header li.dropdown:hover ul {
     width: 20px;
     height: 20px;
     content: "";
-    gap: 10px;
+    margin-right: 8px
 }
 footer .end{
     display: flex;
@@ -900,7 +909,7 @@ footer .end{
     color: #3d3d3d;
     padding-bottom: 8px;
 }
-.list_end a{
+.list_end .list_end_list{
     font-family: 'cera_round_pro_demoregular';
     font-weight: 400;
     font-size: 14px;
@@ -910,7 +919,6 @@ footer .end{
 }
 .social_media .list_end{
     display: flex;
-    justify-content: space-between;
     gap: 10px;
     padding-bottom: 33px;
 }
@@ -922,12 +930,12 @@ footer .end{
     border-radius: 4px;
     width: 30px;
     height: 30px;
-    display: flex;
-    align-content: center;
+    display: inline-flex;
+    align-items: center;
     justify-content: center;
-    padding-bottom: 7px;
 }
 .social_media .accept{
+    padding-top: 7px;
     padding-bottom: 13px;
 }
 footer p{
