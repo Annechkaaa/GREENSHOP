@@ -1,0 +1,10 @@
+@media only screen and (max-width:320px) {
+    .menu {
+        flex-wrap: wrap;
+    }
+    .container {
+        flex-wrap: wrap;
+        display: block;
+    }
+
+}

@@ -88,23 +88,25 @@
 .modal {
     max-width: 500px;
     margin: auto;
-    padding-top: 52px;
+    padding-top: 0;
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 40px;
     border-bottom: solid 10px #46A358;
 }
 
-/*.button_exit {
+.button_exit {
     width: 18px;
     height: 18px;
-    padding: 13px 469px;
+    position: absolute;
+    padding-top: 13px;
+    padding-left: 369px;
 }
-*/
 .title {
     font-family: 'cera_round_pro_demomedium';
     text-align: center;
     margin-bottom: 40px;
+    padding-top: 52px;
 }
 
 .title a {
@@ -143,28 +145,38 @@
 }
 
 .input_form{
-    margin: 16px 100px;
+    margin-bottom: 16px;
     border: 1px solid #eaeaea;
     border-radius: 5px;
     width: 300px;
     height: 40px;
+    font-family: 'cera_round_pro_demoregular';
     font-weight: 400;
     font-size: 14px;
     line-height: 114%;
     color: #a5a5a5;
+    padding-left: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
-
 .button_enter {
-    margin: 41px 100px;
+    margin-top: 25px;
     border-radius: 5px;
+    border: none;
     width: 300px;
     height: 45px;
     background: #46a358;
+    font-family: 'cera_round_pro_demobold';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    padding: 15px 119px;
 }
 
 .alt_register {
     text-align: center;
-    margin: 36px 0;
+    margin-top: 36px;
     font-weight: 400;
     font-size: 13px;
     line-height: 123%;
@@ -172,17 +184,17 @@
 }
 
 .link div {
-    padding: 27px 0;
-    margin: 15px 100px;
+    margin-top: 27px;
+    margin-bottom: 15px;
     border: 1px solid #eaeaea;
     border-radius: 5px;
     width: 300px;
     height: 40px;
+    display: inline-block;
 }
 
 .link a {
     text-decoration: none;
-    margin: 10px 68px;
     width: 163px;
     height: 20px;
     font-weight: 500;
@@ -190,7 +202,29 @@
     line-height: 123%;
     text-align: center;
     color: #727272;
+    margin: 12px 68px 10px 68px;
 }
+.link .link_google a:before{
+    background-image: url("../images/Group.svg");
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    content: "";
+    margin-right: 9px;
+    position: relative;
+    margin-top: 6px;
+}
+.link .link_facebook a:before{
+    background-image: url("../images/facebook.svg");
+    display: inline-flex;
+    width: 20px;
+    height: 20px;
+    content: "";
+    margin-right: 4px;
+    position: relative;
+    margin-top: 6px;
+}
+
 
 .container {
     max-width: 1200px;
@@ -228,6 +262,7 @@ header ul {
     display: flex;
     align-items: center;
     gap: 50px;
+    transition: 0.4s;
 }
 
 header ul li ul {
@@ -235,6 +270,7 @@ header ul li ul {
     position: absolute;
     padding-top: 37px;
     right: calc(50% - 94px);
+    transition: 0.5s;
 }
 
 header ul li ul li {
@@ -281,6 +317,7 @@ header li.dropdown:hover ul {
     font-weight: 400;
     font-size: 16px;
     color: #3d3d3d;
+    transition: 0.4s;
 }
 
 .menu .navigation:hover {
@@ -407,6 +444,7 @@ header li.dropdown:hover ul {
     font-weight: 400;
     color: #3d3d3d;
     text-decoration: none;
+    transition: 0.4s;
 }
 
 .categories_sale a:hover {
@@ -439,6 +477,7 @@ header li.dropdown:hover ul {
     line-height: 107%;
     color: #3d3d3d;
     text-decoration: none;
+    transition: 0.4s;
 }
 
 .product_line a:hover {
@@ -468,6 +507,7 @@ header li.dropdown:hover ul {
     height: 350px;
     border-top: solid 1px transparent;
     position: relative;
+    transition: 2s;
 }
 
 .varieties_product article:hover {
@@ -487,6 +527,7 @@ header li.dropdown:hover ul {
     top: 14px;
     left: 0;
     display: none;
+    transition: 0.4s;
 }
 
 .varieties_product article:hover .sale {
@@ -502,6 +543,7 @@ header li.dropdown:hover ul {
     display: none;
     align-items: center;
     justify-content: space-between;
+    transition: 0.4s;
 }
 
 .varieties_product article:hover .icons {
@@ -561,6 +603,7 @@ header li.dropdown:hover ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.4s;
 }
 
 .page_number a {
@@ -570,6 +613,7 @@ header li.dropdown:hover ul {
     line-height: 89%;
     color: #3d3d3d;
     text-decoration: none;
+    transition: 0.4s;
 }
 
 .page_number li:hover {
@@ -944,3 +988,57 @@ footer p{
     display: flex;
     justify-content: center;
 }
+.sale{
+    display: inline-block;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: 3s go infinite;
+
+}
+@keyframes go {
+    0%{
+        top: 0;
+        left: 0;
+    }
+    50%{
+        top: 231px;
+        left: 0;
+    }
+    100%{
+        top: 0;
+        left: 0;
+    }
+}
+/*
+body .load{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background-color: #eaeaea;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 10;
+    transition: 10s;
+}
+body .loading{
+    width: 30px;
+    height: 30px;
+    animation: 10s loading 30;
+    position: absolute;
+    z-index: 20;
+    margin: 400%;
+}
+@keyframes loading {
+    30%{
+        rotate: 180deg;
+    }
+    50%{
+        rotate: 360deg;
+    }
+    100%{
+        width: 0;
+    }
+}
+ */
