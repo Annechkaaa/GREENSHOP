@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mob_menu.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,50 +18,93 @@
 <img src="images/loading.svg" alt="loading" class="loading">
 </div>
 <div class="content">
-<header>
-    <div class="container">
-        <a href="#" class="logo">
-            <img src="images/Logo.svg" alt="logo">
-        </a>
-        <nav>
-            <ul class="menu">
-                <li>
-                    <a href="#" class="navigation"> Home</a>
-                </li>
-                <li>
-                    <a href="#" class="navigation"> Shop</a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="navigation"> Plant Care</a>
-                    <ul>
-                        <li>
-                            <a href="#" class="care"> Drainage </a>
-                        </li>
-                        <li>
-                            <a href="#" class="care"> Fungicides</a>
-                        </li>
-                        <li>
-                            <a href="#" class="care"> Fertilizer </a>
-                        </li>
-                        <li>
-                            <a href="#" class="care care_arrow"> Priming
-                                <svg width="7" height="10" viewBox="0 0 7 10" fill="none"
-                                     xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1.14228 0.945805C0.909014 0.730097 0.908201 0.379612 1.14046 0.162973C1.35161 -0.0339699 1.68269 -0.0524979 1.9164 0.107825L1.98337 0.161288L6.79132 4.60737C7.00401 4.80406 7.02336 5.11265 6.84935 5.32969L6.79135 5.39186L1.9834 9.83868C1.75016 10.0544 1.37278 10.0537 1.1405 9.83706C0.929333 9.64013 0.910782 9.33257 1.08439 9.1162L1.14224 9.05423L5.52584 4.99941L1.14228 0.945805Z"
-                                          fill="#3D3D3D"/>
-                                </svg>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="blogs">
-                    <a href="#" class="navigation"> Blogs</a>
-                </li>
+
+    <header class="cd-header">
+        <div class="header-wrapper">
+            <div class="logo-wrap">
+                <a href="#" class="hover-target"><span>your</span>logo</a>
+            </div>
+            <div class="nav-but-wrap">
+                <div class="menu-icon hover-target">
+                    <span class="menu-icon__line menu-icon__line-left"></span>
+                    <span class="menu-icon__line"></span>
+                    <span class="menu-icon__line menu-icon__line-right"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="nav">
+        <div class="nav__content">
+            <ul class="nav__list">
+                <li class="nav__list-item active-nav"><a href="#" class="hover-target">home</a></li>
+                <li class="nav__list-item"><a href="#" class="hover-target">studio</a></li>
+                <li class="nav__list-item"><a href="#" class="hover-target">news</a></li>
+                <li class="nav__list-item"><a href="#" class="hover-target">contact</a></li>
             </ul>
-        </nav>
-        <a href="Registration.html" class="login_btn"> <img src="images/Logout.svg" alt="login"> Login </a>
+        </div>
     </div>
-</header>
+
+    <div class="section full-height over-hide">
+        <div class="switch-wrap">
+            <h1>overlay menu</h1>
+            <div id="switch" class="hover-target">
+                <div id="circle"></div>
+            </div>
+            <p><span>dark</span> - <span>light</span></p>
+        </div>
+    </div>
+
+
+    <!-- Link to page
+    ================================================== -->
+
+    <a href="https://front.codes/" class="link-to-portfolio hover-target" target=”_blank”></a>
+
+<!-- <header>-->
+<!--    <div class="container">-->
+<!--        <a href="#" class="logo">-->
+<!--            <img src="images/Logo.svg" alt="logo">-->
+<!--        </a>-->
+<!--        <nav>-->
+<!--            <ul class="menu">-->
+<!--                <li>-->
+<!--                    <a href="#" class="navigation"> Home</a>-->
+<!--                </li>-->
+<!--                <li>-->
+<!--                    <a href="#" class="navigation"> Shop</a>-->
+<!--                </li>-->
+<!--                <li class="dropdown">-->
+<!--                    <a href="#" class="navigation"> Plant Care</a>-->
+<!--                    <ul>-->
+<!--                        <li>-->
+<!--                            <a href="#" class="care"> Drainage </a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#" class="care"> Fungicides</a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#" class="care"> Fertilizer </a>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            <a href="#" class="care care_arrow"> Priming-->
+<!--                                <svg width="7" height="10" viewBox="0 0 7 10" fill="none"-->
+<!--                                     xmlns="http://www.w3.org/2000/svg">-->
+<!--                                    <path d="M1.14228 0.945805C0.909014 0.730097 0.908201 0.379612 1.14046 0.162973C1.35161 -0.0339699 1.68269 -0.0524979 1.9164 0.107825L1.98337 0.161288L6.79132 4.60737C7.00401 4.80406 7.02336 5.11265 6.84935 5.32969L6.79135 5.39186L1.9834 9.83868C1.75016 10.0544 1.37278 10.0537 1.1405 9.83706C0.929333 9.64013 0.910782 9.33257 1.08439 9.1162L1.14224 9.05423L5.52584 4.99941L1.14228 0.945805Z"-->
+<!--                                          fill="#3D3D3D"/>-->
+<!--                                </svg>-->
+<!--                            </a>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+<!--                <li class="blogs">-->
+<!--                    <a href="#" class="navigation"> Blogs</a>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </nav>-->
+<!--        <a href="Registration.html" class="login_btn"> <img src="images/Logout.svg" alt="login"> Login </a>-->
+<!--    </div>-->
+<!--</header>-->
 <main>
     <section class="banner">
         <div class="container">
