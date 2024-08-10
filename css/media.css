@@ -1,10 +1,64 @@
-@media only screen and (max-width:320px) {
-    .menu {
+@media screen and (max-width:430px) {
+    .container{
+        max-width: 398px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .banner .container {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .description {
+         padding-left: 0;
+        display: inline;
+    }
+    .product .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .product_line ul{
+        gap: 15px;
+        flex-direction: column;
+    }
+    .product_line p{
+        gap: 1px;
+    }
+    .varieties_product{
+        justify-content: center;
+    }
+    .plants_story {
+        display: block;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .plants_story article{
+        max-width: 398px;
+        justify-content: end;
+    }
+    .blog_post{
+        display: block;
+        justify-content: center;
+        padding-left: calc(50% - 134px);
+    }
+    .last_part .container{
+        justify-content: center;
         flex-wrap: wrap;
     }
-    .container {
+    .background .container{
+        height: auto;
+        gap: 1px;
+        flex-direction: column;
+    }
+    footer .end{
         flex-wrap: wrap;
-        display: block;
+        padding-right: 15px;
+        padding-left: 15px;
+        gap: 5px;
+        justify-content: center;
     }
 
-}
+    }
+
+

@@ -803,24 +803,6 @@ header li.dropdown:hover ul {
     width: 204px;
     height: 202px;
 }
-/*.last_article_bord{
-    border-right: solid 1px rgba(70, 163, 88, 0.1);
-    border-left: solid 1px rgba(70, 163, 88, 0.1);
-    padding: 0 27px;
-}
-*/
-/*
-.last_part .last_article_bord:after {
-    width: 187px;
-    height: 1px;
-    border: solid 1px #46A358;
-    transform: rotate(90deg);
-    content: "";
-    display: inline-block;
-    position: absolute;
-}
- */
-
 
 .last_article h3{
     font-family: 'cera_round_pro_demobold';
@@ -1068,4 +1050,7 @@ body .content{
     100%{
         opacity: 1;
     }
+}
+.nav_but_wrap{
+    display: none;
 }
