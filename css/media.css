@@ -4,6 +4,14 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+    header ul{
+        display: block;
+    }
+    .login_btn{
+        width: 32px;
+        justify-content: flex-start;
+        padding-left: 7px;
+    }
     .banner .container {
         display: block;
         flex-wrap: wrap;
@@ -13,10 +21,16 @@
          padding-left: 0;
         display: inline;
     }
+    .container .product_line{
+        height: auto;
+    }
     .product .container{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .categories_sale{
+        text-align: center;
     }
     .product_line ul{
         gap: 15px;
@@ -36,6 +50,7 @@
     .plants_story article{
         max-width: 398px;
         justify-content: end;
+        padding: 0 15px;
     }
     .blog_post{
         display: block;
@@ -50,6 +65,7 @@
         height: auto;
         gap: 1px;
         flex-direction: column;
+        max-width: 430px;
     }
     footer .end{
         flex-wrap: wrap;
@@ -58,7 +74,42 @@
         gap: 5px;
         justify-content: center;
     }
-
     }
+
+@media screen and (max-width:768px){
+    .container{
+        max-width: 738px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .banner .container{
+        display: block;
+        text-align: justify;
+    }
+    .plants_story{
+        flex-wrap: wrap;
+    }
+    .blog_post{
+        display: block;
+        justify-content: center;
+        padding-left: calc(50% - 134px);
+    }
+    .last_part .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .last_article{
+        width: auto;
+        height: auto;
+        text-align: center;
+    }
+    .background .container{
+        gap: 10px;
+    }
+    footer .end{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
 
 

@@ -14,6 +14,10 @@ $('.owl-carousel').owlCarousel({
 
 });
 
+$( function() {
+    $( "#accordion" ).accordion();
+} );
+
     /* Please ❤ this if you like it! */
 
 

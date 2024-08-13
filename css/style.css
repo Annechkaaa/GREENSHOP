@@ -342,7 +342,6 @@ header li.dropdown:hover ul {
     width: 100%;
 }
 
-
 .banner .container {
     display: flex;
     justify-content: space-between;
@@ -1053,4 +1052,34 @@ body .content{
 }
 .nav_but_wrap{
     display: none;
+}
+
+.ui-accordion .ui-accordion-header{
+    background-color: transparent;
+    border: solid 2px black;
+    padding: 20px 76px 20px 44px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    text-align: start;
+    color: #242424;
+    border-radius: 8px;
+}
+.ui-accordion .ui-accordion-content{
+    padding: 0 44px 30px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #242424;
+    background-color: gainsboro;
+    border: solid 2px black;
+    border-radius: 0 0 8px 8px;
+    border-top: none;
+}
+.ui-accordion .ui-accordion-header.ui-state-active{
+    background-color: gainsboro;
+    border-radius:8px 8px 0 0 ;
+    border-bottom: none;
 }
